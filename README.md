@@ -1,7 +1,7 @@
 
 ## JPX (ANDROID PROXY APP)
 ## Description
-My Android Proxy App is a tool that acts as a local proxy server, allowing users to intercept, modify, and forward HTTP/2 requests and responses. It helps to analyse web applications requests and responses and to find potential Vulnerabilities in web sites . It features a user-friendly interface for viewing and modifying requests and responses, with support for features like http/https/http2 traffic interception, request/response manipulation, and much more.
+JPX Proxy App is a tool that acts as a local proxy server, allowing users to intercept, modify, and forward HTTP/2 requests and responses. It helps to analyse web applications requests and responses and to find potential Vulnerabilities in web sites . It features a user-friendly interface for viewing and modifying requests and responses, with support for features like http/https/http2 traffic interception, request/response manipulation, and much more.
 
 ## Features
 - Intercept and modify http requests and responses
