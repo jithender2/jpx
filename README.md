@@ -21,7 +21,7 @@ My Android Proxy App is a tool that acts as a local proxy server, allowing users
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/jithender2/JPX.git
 ```
 
 ### Import into Android Studio
@@ -53,7 +53,7 @@ git clone https://github.com/yourusername/your-repository.git
 1. **Fork the Repository**.
 2. **Clone Your Fork**.
    ```bash
-   git clone https://github.com/yourusername/your-forked-repository.git
+   git clone https://github.com/jithender2/JPX.git
    ```
 3. **Create a Branch**.
    ```bash
@@ -70,7 +70,7 @@ git clone https://github.com/yourusername/your-repository.git
 6. **Create a Pull Request** on GitHub.
 
 ## License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **BSD 2-Clause License** - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 - **GitHub Issues**: Report bugs or suggest features.
