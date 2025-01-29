@@ -75,3 +75,14 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## Contact
 - **GitHub Issues**: Report bugs or suggest features.
 
+## Credits
+
+This project includes code from the **Cute-Proxy** project:
+
+- **Original repository**: [https://github.com/hsiafan/cute-proxy](https://github.com/hsiafan/cute-proxy)
+- **License**: BSD 2-Clause License  
+- Some files in this project are directly taken from Cute-Proxy without modification.  
+- Other parts of the code are based on Cute-Proxy but have been modified.  
+
+For details, see the `NOTICE` file.
+
