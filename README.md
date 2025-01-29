@@ -1,23 +1,23 @@
-# My Android Proxy App
 
+## JPX (ANDROID PROXY APP)
 ## Description
-My Android Proxy App is a tool that acts as a local proxy server, allowing users to intercept, modify, and forward HTTP/2 requests and responses. The app is designed to help developers test and debug their network traffic. It features a user-friendly interface for viewing and modifying requests and responses, with support for advanced features like SSL interception, request/response manipulation, and much more.
+My Android Proxy App is a tool that acts as a local proxy server, allowing users to intercept, modify, and forward HTTP/2 requests and responses. It helps to analyse web applications requests and responses and to find potential Vulnerabilities in web sites . It features a user-friendly interface for viewing and modifying requests and responses, with support for features like http/https/http2 traffic interception, request/response manipulation, and much more.
 
 ## Features
-- Intercept and modify HTTP/2 requests and responses
-- Support for SSL interception
-- Customizable proxy settings
+- Intercept and modify http requests and responses
+- Support for http/https/http2 interception
 - View raw and modified network traffic in real-time
 - Send and resend custom requests (Repeater functionality)
 - UI components to display requests in a structured format
-- Support for saving and exporting intercepted data
 
-## Installation
-
-### Prerequisites
-- **Android Studio**: Make sure you have Android Studio installed and set up on your machine.
-- **Java**: This app requires **Java 8 or higher**.
-- **Android Device/Emulator**: A physical Android device or an emulator with internet access.
+## Installation 
+- Download the app from the release and install
+- Download kiwi browser and use foxyproxy extension to setup proxy
+- Open the proxy app and allow storage permission
+- It will generate a  CA certificate and saves it to the path /DOCUMENTS/JPX
+- Open settings and search for certificate click on install ca certificate and select the generated ca certificate
+- Keep the proxy in background or use as popup window when browser
+- The requests responses will appear on the proxy app
 
 ### Clone the Repository
 ```bash
@@ -29,15 +29,13 @@ git clone https://github.com/yourusername/your-repository.git
 2. Click on `File` > `Open` and select the cloned repository directory.
 3. Android Studio will automatically sync the project with Gradle and download any necessary dependencies.
 
-## Running the App
+## CodeAssist (In android) 
+1. Create a project in Code assistant with package com.proxy
+2. Copy the downloaded source code in the the project
+3. Open library manager amd click import from gradle
+4. Build the app
 
-### Running on an Android Device
-1. Connect your Android device via USB or set up an Android emulator.
-2. In Android Studio, select your device from the top toolbar.
-3. Click on the **Run** button (green play icon) or use the following command:
-   ```bash
-   ./gradlew installDebug
-   ```
+
 
 ## Usage
 1. **Start Proxy Server**: Open the app and start the proxy server.
@@ -47,19 +45,8 @@ git clone https://github.com/yourusername/your-repository.git
 5. **SSL Interception**: View encrypted traffic in plaintext.
 6. **Repeater**: Resend previously intercepted requests.
 
-## Testing
 
-### Unit Tests
-Run unit tests using:
-```bash
-./gradlew test
-```
 
-### UI Tests
-Run UI tests with:
-```bash
-./gradlew connectedAndroidTest
-```
 
 ## Contributing
 
@@ -86,6 +73,5 @@ Run UI tests with:
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-- **Email**: your.email@example.com
 - **GitHub Issues**: Report bugs or suggest features.
 
