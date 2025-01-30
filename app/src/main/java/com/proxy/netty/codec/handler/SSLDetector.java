@@ -91,7 +91,7 @@ public class SSLDetector extends ChannelInboundHandlerAdapter {
 			@Override
 			protected void configurePipeline(ChannelHandlerContext c, String protocol) {
 				// logger.debug("alpn with target server {}: {}", address.host(), protocol);
-				boolean useH2 =protocol.equalsIgnoreCase(HTTP_2);
+				boolean useH2 =protocol.equalsIgnoreCase(HTTP_2);//set this false manually for  labs like portswigger labs
 				SslContext serverContext = sslContextManager.createSSlContext(address.host(), useH2);
 				SslHandler serverSSLHandler = serverContext.newHandler(ctx.alloc());
 				ctx.pipeline().addLast("ssl-handler", serverSSLHandler);
