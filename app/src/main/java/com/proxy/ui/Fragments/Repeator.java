@@ -600,7 +600,7 @@ public class Repeator extends Fragment {
 					protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
 						if (msg instanceof HttpResponse) {
 							HttpResponse response = (HttpResponse) msg;
-							handleHttpResponse(response, fullResponse, bodyType);
+							bodyType=handleHttpResponse(response, fullResponse, bodyType);
 						}
 						List<ByteBuffer> byteBuffers = new ArrayList<>();
 						if (msg instanceof HttpContent) {
@@ -663,7 +663,7 @@ public class Repeator extends Fragment {
 	* @param bodyType      The BodyType (passed by reference and potentially modified).
 	*                      It's important that bodyType is initialized before calling this method.
 	*/
-	private void handleHttpResponse(HttpResponse response, StringBuilder stringBuilder, BodyType bodyType) {
+	private BodyType handleHttpResponse(HttpResponse response, StringBuilder stringBuilder, BodyType bodyType) {
 		contentEncoding = response.headers().get(CONTENT_ENCODING_HEADER, "");
 		String contentType = response.headers().get(CONTENT_TYPE_HEADER);
 		if (contentType != null) {
@@ -673,7 +673,7 @@ public class Repeator extends Fragment {
 		stringBuilder.append(String.format("%s %s\n", response.protocolVersion(), response.status()));
 		response.headers()
 				.forEach(entry -> stringBuilder.append(String.format("%s: %s\n", entry.getKey(), entry.getValue())));
-
+		return bodyType;
 	}
 
 	/**
